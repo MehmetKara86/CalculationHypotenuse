@@ -1,0 +1,22 @@
+
+public class CalcHypotenuse {
+
+    public static void main (String [] arg) {
+
+        int a, b; //Legs of Lengths of Right Triangle
+
+        double hyp; // Leg of Length of hypotenuse
+
+        Scanner length = new Scanner(System.in);
+
+        System.out.print("Enter the right triangle first leg of length [m]: ");
+
+        a = length.nextInt();
+
+        System.out.print("Enter the right triangle second leg of length [m] : ");
+
+        b = length.nextInt();
+
+        hyp = Math.sqrt((a*a)+(b*b));
+
+        System.out.print("Your hypotenuse of length is "+ hyp + " metre");
